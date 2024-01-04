@@ -32,7 +32,7 @@ h1 {
     font-size: 22px;
     font-weight: 300;
     line-height: 32px;
-    margin: 0 0 0.75em;
+    margin: 0 0 1rem;
 }
 
 h1 span {
@@ -42,7 +42,7 @@ h1 span {
     line-height: 32px;
 }
 
-.header span {
+header>span {
     color: #15202A;
     font-size: 12px;
     font-weight: 300;
@@ -55,18 +55,47 @@ form {
     align-items: center;
 }
 
-input[type="text"] {
+.email-field {
     width: 90%;
     border-radius: 28px;
     border: 1px solid #C2D3FF;
     background: #FFF;
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.00);
-    color: #B8C7ED;
+    /* color: #B8C7ED; */
     font-size: 12px;
     font-weight: 300;
     line-height: 20px;
     padding: .65rem 2rem;
-    margin: 0.65rem 0;
+    margin: 2rem 0 0;
+    font-family: 'Libre Franklin', sans-serif;
+    outline: none;
+}
+
+/* .email-field:valid {
+    border: 1px solid goldenrod;  
+} */
+
+.email-field:invalid {
+    border: 1px solid #FF5466;
+}
+
+.error-display,
+.success-display {
+    color: #FF5466;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.125px;
+    display: none;
+}
+
+.success-display {
+    color: goldenrod;
+}
+
+.show {
+    display: inline;
 }
 
 button {
@@ -81,10 +110,11 @@ button {
     font-weight: 600;
     line-height: 16px;
     border: none;
+    margin: 0.65rem 0;
 }
 
 footer {
-    margin-top: 7.5rem;
+    margin-top: 4.5rem;
     text-align: center;
 }
 

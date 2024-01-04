@@ -18,8 +18,10 @@
             <h1 class="main-header">We are launching <span>soon!</span></h1>
             <span>Subscribe and get notified</span>
             <form action="#">
-                <input type="text" placeholder="Your email address...">
-                <button>Notify Me</button>
+                <input class="email-field" type="email" placeholder="Your email address...">
+                <span class="success-display">Thank you for subscribing. We will notify you.</span>
+                <span class="error-display">Please provide a valid email address</span>
+                <button id="submit-btn">Notify Me</button>
             </form>
         </header>
         <main>
@@ -38,6 +40,7 @@
             <span class="copyright">Copyright Ping. All rights reserved.</span>
         </footer>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
